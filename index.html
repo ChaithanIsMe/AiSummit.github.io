@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <style>
+.content{
+    padding:10px;
+    background-color:aliceblue;
+    display:none;
+   
+    
+}
+.Open{
+  padding:10px;
+    background-color:rgb(194, 190, 190);   
+    width:100%;
+}
+.active{
+  background-color: whitesmoke;
+}
+        </style>
+</head>
+<body>
+<h2 style="color:white; background-color:orange ; margin-right:325px;">
+InterNational AI Summit
+</h2>
+<br>
+
+<p>
+Read These Collapsibles carfully to understand details about InterNational AI
+Summit
+    </p>
+
+    <button type="button" class="Open">
+About AI Summit
+    </button>
+
+<div class="content">   
+<p>
+Artifical intelligance is exedentioly expanding to label its significance for shaping the world
+.The 2023 AI For Good Global Summit aims to identify practical applications of artificial intelligence (AI) to accelerate progress towards the SDGs and connect AI innovators with public and private sector decision makers to help scale AI solutions globally.
+    </p>
+</div>
+<br>
+<p>
+event related info
+    </p>
+<br>
+
+
+    
+<script>
+    var ai=document.getElementsByClassName("Open")
+var y=0;
+for(y=0;y<ai.length;y++){
+ai[y].addEventListener("click",function(){
+
+var ine=this.nextElementSibling;
+
+if(ine.style.display==="block"){
+ine.style.display="none";
+}
+else{
+    ine.style.display="block";
+}
+})                  
+}
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
